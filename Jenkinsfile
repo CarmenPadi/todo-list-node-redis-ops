@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Run Docker Container') {
            steps {
-                bat 'docker-compose up -d --build'
+                sh 'docker-compose up -d --build'
             }
         }
     }
